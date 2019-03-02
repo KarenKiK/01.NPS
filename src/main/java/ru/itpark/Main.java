@@ -40,7 +40,7 @@ public class Main {
             detractors++; // увеличение значения на 1
         }
 
-        int nps = (promoters - detractors) * 100 / 3;
+        int nps = (promoters - detractors) * 100 / 3; // magic number, magic constant
         System.out.println(nps);
     }
 }

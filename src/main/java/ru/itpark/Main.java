@@ -2,9 +2,12 @@ package ru.itpark;
 
 public class Main {
     public static void main(String[] args) {
-        int firstScore = 9; // 0 - 10
-        int secondScore = 1;
-        int thirdScore = 9;
+        // массив - это объект (объект.свойство, объект.метод())
+        int[] scores = {9, 1, 9}; // Java сама вычислит, что это массив из 3 элементов
+
+        int firstScore = scores[0]; // scores[0] - читаем первый элемент
+        int secondScore = scores[1];
+        int thirdScore = scores[2];
 
         int promoters = 0; // мы ещё не считали
         int neutrals = 0; // мы ещё не считали
@@ -40,7 +43,7 @@ public class Main {
             detractors++; // увеличение значения на 1
         }
 
-        int nps = (promoters - detractors) * 100 / 3; // magic number, magic constant
+        int nps = (promoters - detractors) * 100 / scores.length; // .length - кол-во элементов (или длина массива)
         System.out.println(nps);
     }
 }

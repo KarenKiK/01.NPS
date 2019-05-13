@@ -2,11 +2,13 @@ package ru.itpark;
 
 public class Main {
     public static void main(String[] args) {
-        NpsService service = new NpsService();
+        NpsServicece servicece = new NpsServicece();
+        int[] servises = {10,10,10,10};
 
-        // массив - это объект (объект.свойство, объект.метод())
-        int[] scores = {9, 1, 9, 9, 9}; // Java сама вычислит, что это массив из 3 элементов
-        int nps = service.calculate(scores);// ctrl + alt + v (создание локальной переменной)
+        int nps = servicece.calculate(servises);
         System.out.println(nps);
+        System.out.println(nps + 10);
+
     }
 }
+
